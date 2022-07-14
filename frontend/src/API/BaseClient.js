@@ -40,7 +40,6 @@ export class BaseClient {
     }
 
     async post(endpoint, body, opt = {}) {
-        console.log(body)
         return await this.#fetchData(endpoint, {
             ...opt,
             method: 'POST',
@@ -57,7 +56,7 @@ export class BaseClient {
      }
 
     async delete(endpoint, opt = {}) { 
-      return await this.#fetchData(endpoint, {
+        return await this.#fetchData(endpoint, {
             ...opt,
             method: 'DELETE'
         })
