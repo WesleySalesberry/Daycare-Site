@@ -10,7 +10,7 @@ class Message extends BaseClient {
 
   get privateMessage() {
     return {
-      allMessage: () => this.get(`${MESSAGE}`),
+      allMessages: () => this.get(`${MESSAGE}`),
       deleteMessage: (id) => this.delete(`${MESSAGE}/${id}`),
     }
   }
