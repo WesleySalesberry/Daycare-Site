@@ -5,8 +5,10 @@ import colors from 'colors'
 import morgan from 'morgan'
 import fileupload from 'express-fileupload'
 import cors from 'cors'
+import connectDB from './configs/db.js'
 
 dotenv.config()
+connectDB()
 
 const app = express()
 
