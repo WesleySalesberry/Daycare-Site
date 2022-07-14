@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const NotificationSchema = mongoose.Schema({
+const MessageSchema = mongoose.Schema({
   name:{
     type: String,
     trim: true,
@@ -25,4 +25,4 @@ const NotificationSchema = mongoose.Schema({
   timestamps: true
 })
 
-export const Notification = mongoose.model('Notification', NotificationSchema)
+export const Message = mongoose.model('Message', MessageSchema)
