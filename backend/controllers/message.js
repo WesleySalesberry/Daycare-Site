@@ -38,7 +38,7 @@ export const getMessages = async (req, res, next) => {
  */
 export const deleteMessages = async (req, res, next) => {
   try {
-    const message = await Message.findById({_id: req.params.id})
+    const message = await Message.findById(req.params.id)
     if(!message){
       res.status(401)
       throw new Error('Message not found')
