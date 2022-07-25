@@ -15,6 +15,7 @@ const app = express()
 import notification from './routes/notification.js'
 import user from './routes/users.js'
 import messages from './routes/messages.js'
+import downloads from './routes/downloads.js'
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }));
@@ -54,6 +55,7 @@ if (process.env.NODE_ENV === 'production') {
 app.use('/api/v1/notification', notification)
 app.use('/api/v1/user', user)
 app.use('/api/v1/message', messages)
+app.use('/api/v1/download', downloads)
 
 const PORT = process.env.PORT || 3001
 
