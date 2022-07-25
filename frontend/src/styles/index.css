@@ -5,3 +5,7 @@
 .textarea {
   resize: none;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
