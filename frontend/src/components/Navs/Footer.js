@@ -5,9 +5,9 @@ import { Icons } from "../Icons"
 
 export const Footer = () => {
   return (
-    <Container className="mt-4">
-      <footer className="text-center">
-        <Row >
+    <footer className="footer mt-auto py-3">
+      <Container className="text-center">
+         <Row>
           <Col md={6}>
                 <h3>Sandcastles Child Care</h3> 
           </Col>
@@ -17,10 +17,10 @@ export const Footer = () => {
             />
           </Col>
         </Row>
-        <div >
+        <div className="text-muted">
           Copyright {new Date().getFullYear()}
         </div>
-      </footer>
-    </Container>
+      </Container>
+    </footer>
   )
 }

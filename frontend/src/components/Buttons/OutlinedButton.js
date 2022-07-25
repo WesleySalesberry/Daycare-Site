@@ -15,20 +15,20 @@ export const SecondaryButtonOutline = ({ children, type="submit", style }) => {
   )
 }
 
-export const SuccessButtonOutline = ({ children }) => {
+export const SuccessButtonOutline = ({ children, type="submit", style }) => {
   return (
-    <button type="button" className="btn btn-outline-success">{children}</button>
+    <button type={type} className={`btn btn-outline-success ${style}`}>{children}</button>
   )
 }
 
-export const WarningButtonOutline = ({ children }) => {
+export const WarningButtonOutline = ({ children, type="submit", style }) => {
   return (
-    <button type="button" className="btn btn-outline-warning">{children}</button>
+    <button type={type} className={`btn btn-outline-warning ${style}`}>{children}</button>
   )
 }
 
-export const DangerButtonOutline = ({ children }) => {
+export const DangerButtonOutline = ({ children, type="submit", style }) => {
   return (
-    <button type="button" className="btn btn-outline-danger">{children}</button>
+    <button type={type} className={`btn btn-outline-danger ${style}`}>{children}</button>
   )
 }
