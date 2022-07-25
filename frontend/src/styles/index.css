@@ -1,11 +1,11 @@
-.messageCard{
-  width: '45rem'
-}
-
 .textarea {
   resize: none;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.dashboard-card {
+  width: 18rem
 }
