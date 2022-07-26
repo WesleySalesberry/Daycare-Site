@@ -16,6 +16,8 @@ import notification from './routes/notification.js'
 import user from './routes/users.js'
 import messages from './routes/messages.js'
 import downloads from './routes/downloads.js'
+import dashboard from './routes/dashboard.js'
+
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }));
@@ -56,6 +58,8 @@ app.use('/api/v1/notification', notification)
 app.use('/api/v1/user', user)
 app.use('/api/v1/message', messages)
 app.use('/api/v1/download', downloads)
+app.use('/api/v1/dashboard', dashboard )
+
 
 const PORT = process.env.PORT || 3001
 

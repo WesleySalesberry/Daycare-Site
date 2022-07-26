@@ -14,8 +14,8 @@ export const BottomNav = () => {
       <ul className="navbar-nav ms-auto">
         <NavLink to='/about'> About </NavLink>
         <NavLink to='/contact'> Contact </NavLink>
-        {/* <NavLink to='/login'> Login </NavLink> */}
         <NavLink to='/message'> Message </NavLink>
+         <NavLink to='/login'> Login </NavLink> 
       </ul>
     </div>
   </div>

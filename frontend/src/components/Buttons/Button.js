@@ -1,29 +1,52 @@
-export const PrimaryButton = ({ children, width }) => {
+export const PrimaryButton = ({ children, type, style }) => {
   return (
-    <button type="button" className={`btn btn-primary ${width}`}>{children}</button>
+    <button 
+      type={type} 
+      className={`btn btn-primary ${style}`}
+    >
+      {children}
+    </button>
   )
 }
 
-export const SecondaryButton = ({ children, width }) => {
+export const SecondaryButton = ({ children, type, style }) => {
   return (
-    <button type="button" className={`btn btn-secondary ${width}`}>{children}</button>
+    <button 
+      type={type} 
+      className={`btn btn-secondary ${style}`}
+    >
+      {children}
+    </button>
   )
 }
 
-export const SuccessButton = ({ children }) => {
+export const SuccessButton = ({ children, type, style }) => {
   return (
-    <button type="button" className="btn btn-success">{children}</button>
+    <button 
+      type={type} 
+      className={`btn btn-secondary ${style}`}
+    >{children}</button>
   )
 }
 
-export const WarningButton = ({ children }) => {
+export const WarningButton = ({ children, type, style }) => {
   return (
-    <button type="button" className="btn btn-warning">{children}</button>
+    <button 
+      type={type} 
+      className={`btn btn-warning ${style}`}
+    >
+      {children}
+    </button>
   )
 }
 
-export const DangerButton = ({ children }) => {
+export const DangerButton = ({ children, type, style }) => {
   return (
-    <button type="button" className="btn btn-danger">{children}</button>
+    <button 
+      type={type} 
+      className={`btn btn-danger ${style}`}
+    >
+      {children}
+    </button>
   )
 }

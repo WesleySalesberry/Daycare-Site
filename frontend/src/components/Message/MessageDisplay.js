@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { MessageCardLayout } from '../container/MessageCardLayout'
-import { MessageCard } from './MessageCard'
+import { MessageCard } from '../Cards/MessageCard'
 import Message from '../../API/Message';
 import { Alert } from 'react-bootstrap';
 
