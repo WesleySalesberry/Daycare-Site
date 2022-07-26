@@ -1,3 +1,4 @@
+
 export const PrimaryButton = ({ children, type, style }) => {
   return (
     <button 
@@ -50,3 +51,15 @@ export const DangerButton = ({ children, type, style }) => {
     </button>
   )
 }
+
+export const DownloadButton = ({ children, type, onClick, style }) => {
+  return (
+    <button 
+      type={type} 
+      className={`btn btn-primary ${style}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  )
+} 
